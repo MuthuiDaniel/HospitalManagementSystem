@@ -17,8 +17,10 @@ public class Patient {
     public static void main(String[] args) {
         Patient patient = new Patient();
         try {
-            patient.setAge(25); // Valid age
-            patient.setAge(150); // Invalid age
+            // Valid age
+            patient.setAge(25);
+            // Invalid age
+            patient.setAge(150);
         } catch (InvalidAgeException e) {
             System.err.println(e.getMessage());
         }
